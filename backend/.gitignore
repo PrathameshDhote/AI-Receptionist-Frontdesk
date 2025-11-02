@@ -2,5 +2,5 @@ venv/
 
 .env
 
-config/firebase_config.json
+backend/config/firebase_config.json
 
