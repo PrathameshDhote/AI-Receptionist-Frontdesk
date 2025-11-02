@@ -1,0 +1,21 @@
+# Core
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+pydantic-settings
+
+# Database
+firebase-admin
+
+# LiveKit
+livekit
+# LiveKit Agents 1.x - All plugins included as extras
+livekit-agents[openai,silero,deepgram,elevenlabs,turn-detector]
+livekit-plugins-noise-cancellation
+
+# Utilities
+httpx
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
