@@ -103,21 +103,21 @@
     ┌──────────────────┴───────────────────────────────────────┐
     │                                                          │
     ▼                                                          ▼
-┌─────────────────────────────┐ ┌──────────────────────┐
-│ LIVEKIT AGENT               │ │ EXTERNAL APIs        │
-│ (Python)                    │ │                      │
-│ agent/agent.py              │ │ - MegaLLM            │
-│                             │ │   (LLM)              │
-│ ┌─────────────────────────┐ │ │ - assemblyai         │
-│ │ VOICE PIPELINE          │ │ │   (Speech-to-Text)   │
-│ │                         │ │ │ - Cartesia           │
-│ │ - STT: assemblyai         │◄──────────────────────── ┤   (Text-to-Speech)   │
-│ │ - LLM: MegaLLM          │ │ │ - Firebase           │
-│ │ - TTS: Cartesia         │ │ │   (Database)         │
-│ └─────────────────────────┘ │ │                      │
-│                             │ │ - WebSocket          │
-│ ┌─────────────────────────┐ │ │   (Real-time)        │
-│ │ AGENT FUNCTIONS         │ │ └──────────────────────┘
+┌─────────────────────────────┐                        ┌──────────────────────┐
+│ LIVEKIT AGENT               │                        │ EXTERNAL APIs        │
+│ (Python)                    │                        │                      │
+│ agent/agent.py              │                        │ - MegaLLM            │
+│                             │                        │   (LLM)              │
+│ ┌─────────────────────────┐ │                        │ - assemblyai         │
+│ │ VOICE PIPELINE          │ │                        │   (Speech-to-Text)   │
+│ │                         │ │                        │ - Cartesia           │
+│ │ - STT: assemblyai         │◄───────────────────────┤   (Text-to-Speech)   │
+│ │ - LLM: MegaLLM          │ │                        │ - Firebase           │
+│ │ - TTS: Cartesia         │ │                        │   (Database)         │
+│ └─────────────────────────┘ │                        │                      │
+│                             │                        │ - WebSocket          │
+│ ┌─────────────────────────┐ │                        │   (Real-time)        │
+│ │ AGENT FUNCTIONS         │ │                        └──────────────────────┘
 │ │                         │ │
 │ │ - request_help()        │ │
 │ │   - Escalate unknown Qs │ │
